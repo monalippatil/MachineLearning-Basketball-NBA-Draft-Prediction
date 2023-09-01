@@ -8,7 +8,7 @@ packages = [{include = "adv_mla_assignment1"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pandas = "2.0.1"
+pandas = "1.5.*"
 
 
 [build-system]
