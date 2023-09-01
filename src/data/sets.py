@@ -2,7 +2,58 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Defining a function to arrgange date values properly in the 'ht' height feature
+def arranging_date(datapoint):
+    """
+    Arrange date values properly in the 'ht' height feature
 
+    Parameters
+    ----------
+    datapoint : object
+        Input datapoint value
+
+    Returns
+    -------
+    datapoint : object
+        Arranged datapoint value of 'ht' height categorical feature
+    """
+    if datapoint == 'Jun-00':
+        return '00-Jun'
+    elif datapoint == 'Jul-00':
+        return '00-Jul'
+    elif datapoint == 'Apr-00':
+        return '00-Apr'
+    else:
+        return datapoint
+
+
+# Defining a function to modifying date values to relevant height  
+def replacing_ft(datapoint):
+    """
+    Replace date values to relevant height
+
+    Parameters
+    ----------
+    datapoint : object
+        Input datapoint value
+
+    Returns
+    -------
+    datapoint : object
+        Modified the date values to relevant height  
+    """
+    if datapoint == 'Jun':
+        return '06'
+    elif datapoint == 'Jul':
+        return '07'
+    elif datapoint == 'Apr':
+        return '04'
+    elif datapoint == 'May':
+        return '05'
+    else:
+        return datapoint
+  
+    
 # Defining a function to identify missing values in the dataset
 def displaying_null_values(df):
     """
@@ -32,7 +83,6 @@ def displaying_null_values(df):
         print(f'{feature}: {null_count}')
 
 
-# Creating a function to address missing values of numerical and categorical features
 # Defining a function to impute the missing values with mean for numerical features
 def imputing_missing_with_mean(df_data):
     """
