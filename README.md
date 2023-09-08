@@ -1,8 +1,11 @@
 adv_mla_assignment1
 ==============================
 
-Building a model that will predict if a college basketball player will be drafted to join the NBA league.
+Project Overview: The project involves working with the statistical data of the college students playing basketball. In this learning task, the goal is to predict whether a college basketball player will be drafted to join the NBA league based on their statistics.
 
+The annual NBA draft is a highly anticipated event where NBA teams select players from American colleges and international professional leagues to join their rosters. Being drafted to the NBA is a significant achievement for any basketball player, marking a transition to the professional league. This event captures the attention of sports commentators, fans, and enthusiasts who eagerly track the careers of college players and speculate about their chances of being selected by NBA teams.
+
+The structure of the project directory is as below.
 Project Organization
 ------------
 
@@ -11,23 +14,19 @@ Project Organization
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
     │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │   ├── processed      <- The intermediate and final datasets for modeling.
+    │   └── raw            <- The original, immutable dataset that are downloaded from the souce (canvas).
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Jupyter notebooks. Naming convention is <Student Name>-<Student ID>-week<no>_<Task/Model Name> (for ordering),
+    │                         the student's initials, id, respective week's work and a short `-` delimited description for task or model, e.g.
+    │                         `Patil_Monali_14370946_week2_EDA/Patil_Monali_14370946_week2_RF`.
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── references         <- Data dictionaries or metadata manuals.
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
+    ├── reports            <- Generated experiment and analysis reports as PDF, Word etc.
+    │          
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
@@ -35,23 +34,47 @@ Project Organization
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
+    │   ├── data           
+    │   │   └── sets.py    <- Script with function for data cleaning and processing.
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
+    │      │                  predictions
+    │      ├── null.py
+    │      └── performance.py
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
+    └── pyproject.toml     <- toml file to manage project configurations and dependencies in Python.
 
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+The subsequent steps to be performed for execution of the project. 
+
+1. Create a new local copy of a remote assignment 1 repository with below command.
+    git clone git@github.com:MonaliPatil19/adv_mla_assignment1.git
+
+2. Change the working directory as adv_mla_assignment1.
+    cd adv_mla_assignment1
+
+3. Set up a virtual environment, install the required packages using requirement.txt
+    pip install -r requirement.txt
+
+3. Install the custom package my-krml-package
+   pip install -i https://test.pypi.org/simple/ my-krml-package==0.1.9
+
+4. Execute the EDA notebook for week 2 and week 3. EDA and modeling is in same neetbook for week 1. 
+   python Patil_Monali-14370946-week2_EDA.ipynb
+   or 
+   Patil_Monali-14370946-week3_EDA.ipynb
+
+5. Once EDA for the respective week is completed, execute the modeliing notebook. 
+   python Patil_Monali-14370946-week1_LR.ipynb
+   or 
+   Patil_Monali-14370946-week2_RF.ipynb
+   Patil_Monali-14370946-week2_RF_Tuned.ipynb 
+   or 
+   Patil_Monali-14370946-week3_AdaBoost.ipynb
+   Patil_Monali-14370946-week3_AdaBoost_Tuned.ipynb
+
+   Note: The notebooks Patil_Monali-14370946-week*_Tuned.ipynb includes a confusion matrix and the utilization of predict_proba() to estimate the probabilities of target classes on the test dataset, to submitted for the Kaggle competition. 
