@@ -1,4 +1,4 @@
-adv_mla_assignment1
+Developing a predictive model capable of accuratly determining the likelihood of a college basketball player being drafted into the NBA Team. 
 ==============================
 
 • Project Overview: The project involves working with the statistical data of the college students playing basketball. In this learning task, the goal is to predict whether a college basketball player will be drafted to join the NBA league based on their statistics.
