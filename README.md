@@ -414,15 +414,10 @@ learning in the context of NBA draft selections.
 ### **Prerequisites**
 
 -   Python 3.7+
-
--   TensorFlow 2.x
-
--   Keras
-
+-   numpy
+-   pandas
+-   python-dateutil
 -   scikit-learn
-
--   OpenCV
-
 -   Matplotlib
 
 
@@ -480,32 +475,4 @@ Project Organization
 
 --------
 
-• The subsequent steps to be performed for execution of the project. 
-
-1. Create a new local copy of a remote assignment 1 repository with below command.
-    git clone git@github.com:MonaliPatil19/adv_mla_assignment1.git
-
-2. Change the working directory as adv_mla_assignment1.
-    cd adv_mla_assignment1
-
-3. Set up a virtual environment, install the required packages using requirement.txt
-    pip install -r requirement.txt
-
-3. Install the custom package my-krml-package
-   pip install -i https://test.pypi.org/simple/ my-krml-package==0.1.9
-
-4. Execute the EDA notebook for week 2 and week 3. EDA and modeling is in same neetbook for week 1. 
-   python Patil_Monali-14370946-week2_EDA.ipynb
-   or 
-   Patil_Monali-14370946-week3_EDA.ipynb
-
-5. Once EDA for the respective week is completed, execute the modeliing notebook. 
-   python Patil_Monali-14370946-week1_LR.ipynb
-   or 
-   Patil_Monali-14370946-week2_RF.ipynb
-   Patil_Monali-14370946-week2_RF_Tuned.ipynb 
-   or 
-   Patil_Monali-14370946-week3_AdaBoost.ipynb
-   Patil_Monali-14370946-week3_AdaBoost_Tuned.ipynb
-
-   Note: The notebooks Patil_Monali-14370946-week*_Tuned.ipynb includes a confusion matrix and the utilization of predict_proba() to estimate the probabilities of target classes on the test dataset, to submitted for the Kaggle competition. 
+   Note: The notebooks Patil_Monali-14370946-week*_Tuned.ipynb includes a confusion matrix and the utilization of predict_proba() to estimate the probabilities of target classes on the test dataset. 
