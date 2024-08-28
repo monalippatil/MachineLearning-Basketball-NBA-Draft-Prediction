@@ -150,7 +150,7 @@ distribution's shape and retains outliers by scaling data using the mean
 of 0 and standard deviation of 1 across the entire dataset, rather than
 for individual data points.
 
-## <**<u>Modelling</u>**
+## **<u>Modelling</u>**
 
 As part of the learning process, below are the Classifier models built,
 trained, and tested for this binary classification problem.
