@@ -454,7 +454,7 @@ Project Organization
     │
     ├── references         <- Data dictionaries or metadata manual.
     │
-    ├── reports            <- Generated experiment and analysis reports as below PDF.
+    ├── reports            <- Generated experiment and analysis PDF reports as below.
     │                                EXPERIMENT REPORT(Week)-1.pdf
     │                                EXPERIMENT REPORT(Week)-2.pdf
     │                                EXPERIMENT REPORT(Week)-3.pdf
