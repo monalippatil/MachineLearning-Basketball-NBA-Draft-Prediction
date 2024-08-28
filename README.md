@@ -1,9 +1,6 @@
-Machine Learning for NBA Draft Predictions: Analyzing College Basketball
-Players Performance and Developing a predictive model capable of
-accurately determining the likelihood of a college basketball player
-being drafted into the NBA Team.
+## ** Machine Learning for NBA Draft Predictions: Analyzing College Basketball Players Performance and Developing a predictive model capable of accurately determining the likelihood of a college basketball player being drafted into the NBA Team**
 
-**<u>Project Overview</u>**
+### **<u>Project Overview</u>**
 
 The project involves working with the statistical data of the college
 students playing basketball. In this learning task, the goal is to
@@ -19,7 +16,13 @@ commentators, fans, and enthusiasts who eagerly track the careers of
 college players and speculate about their chances of being selected by
 NBA teams.
 
-**Classifiers**
+### **<u>Business Problem</u>**
+
+Build a Binary Classification predictive model capable of accuratly determining the likelihood of a college basketball player being drafted into the NBA based on their performance statistics from their records. The model's accurate predictions can provide valuable insights for both players and teams, aiding decision-making during the NBA draft process. Additionally, this model will offer valuable insights to sports commentators, fans, and scouts, aiding them in predicting the potential NBA draft prospects of individual players.
+
+The primary evaluation metric for this task is the AUROC: Area Under the ROC (Receiver Operating Characteristic) Curve.
+
+### **Classification Tasks:**
 
 Below 3 classification models are built for this task.
 
@@ -29,7 +32,7 @@ Below 3 classification models are built for this task.
 
 -   **AdaBoost Regressor**
 
-**<u>Datasets</u>**
+### **<u>Datasets</u>**
 
 The dataset provided contains a wide range of features that illuminate
 players' performance during their college basketball season.
@@ -48,7 +51,7 @@ The dataset is provided in CSV format as below.
 
 -   Basketball Players Testing dataset: test.csv
 
-**<u>Data Preparation</u>**
+### **<u>Data Preparation</u>**
 
 The exploratory data analysis techniques, checking the dimension of the
 database, feature names, accessing the initial datapoints etc. using
@@ -147,7 +150,7 @@ distribution's shape and retains outliers by scaling data using the mean
 of 0 and standard deviation of 1 across the entire dataset, rather than
 for individual data points.
 
-**<u>Modelling</u>**
+## <**<u>Modelling</u>**
 
 As part of the learning process, below are the Classifier models built,
 trained, and tested for this binary classification problem.
@@ -203,7 +206,8 @@ class 1, indicating players selected for the NBA league, or class 0,
 representing those not chosen. Their feature importance rates range from
 0.02% to 0.15%.
 
-**<u>Evaluation:</u>**
+### **<u>Evaluation:</u>**
+
 
 **Evaluation Metrics:**
 
@@ -330,7 +334,7 @@ Additionally, it suggests that the model is generalised enough on the
 unseen data to predict prospective players and could be deployed in the
 operational environment.
 
-**<u>Models Summary and Business Impact and Benefits:</u>**
+### **<u>Models Summary and Business Impact and Benefits:</u>**
 
 The Logistic Regression Classifier model (of experiment 4 of week 1)
 outperforms other models with a performance score of 0.9881 on training,
@@ -367,7 +371,7 @@ Also, subsequent are some recommendations for business.
 
 -   Collaborate with Experts.
 
-**<u>Data Privacy and Ethical Concerns:</u>**
+### **<u>Data Privacy and Ethical Concerns:</u>**
 
 -   Data privacy was carefully considered in this project. Since the
     dataset was obtained from a university portal as a student, there
@@ -387,7 +391,7 @@ Also, subsequent are some recommendations for business.
     draft selections, and all efforts were made to ensure fairness,
     transparency, and privacy in the modeling process.
 
-**<u>Conclusion</u>**
+### **<u>Conclusion</u>**
 
 In conclusion, this project successfully achieved its goals by
 developing a predictive model for NBA draft selections based on college
@@ -407,7 +411,7 @@ further by considering additional features, for optimizing the
 predictions. Overall, this project has demonstrated the value of machine
 learning in the context of NBA draft selections.
 
-**Prerequisites**
+### **Prerequisites**
 
 -   Python 3.7+
 
@@ -420,3 +424,88 @@ learning in the context of NBA draft selections.
 -   OpenCV
 
 -   Matplotlib
+
+
+• The structure of the project directory is as below.
+
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+Project Organization
+------------
+
+    ├── LICENSE
+    ├── Makefile           <- Makefile with commands like `make data` or `make train`
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── processed      <- The intermediate and final datasets for modeling.
+    │   └── raw            <- The original, immutable dataset that are downloaded from the souce (canvas).
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │
+    ├── notebooks          <- Jupyter notebooks specified below. 
+    │                                MachineLearning-week1_ClassificationModel_LogisticRegression.ipynb
+    │                                MachineLearning-week2_ExploratoryDataAnalysis(EDA).ipynb
+    │                                MachineLearning-week2_ClassificationModel_RandomForest.ipynb
+    │                                MachineLearning-week2_ClassificationModel_RandomForest_Tuned.ipynb
+    │                                MachineLearning-week3_ExploratoryDataAnalysis(EDA).ipynb
+    │                                MachineLearning-week3_ClassificationModel_AdaBoost.ipynb
+    │                                MachineLearning-week3_ClassificationModel_AdaBoost_Tuned.ipynb
+    │
+    ├── references         <- Data dictionaries or metadata manual.
+    │
+    ├── reports            <- Generated experiment and analysis reports as below PDF.
+    │                                EXPERIMENT REPORT(Week)-1.pdf
+    │                                EXPERIMENT REPORT(Week)-2.pdf
+    │                                EXPERIMENT REPORT(Week)-3.pdf
+    │                                Final Project Report.pdf
+    │          
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── src                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes src a Python module
+    │   │
+    │   ├── data           
+    │   │   └── sets.py    <- Script with function for data cleaning and processing.
+    │   │
+    │   │
+    │   ├── models         <- Scripts to train models and then use trained models to make
+    │      │                  predictions
+    │      ├── null.py
+    │      └── performance.py
+    │
+    └── pyproject.toml     <- toml file to manage project configurations and dependencies in Python.
+
+--------
+
+• The subsequent steps to be performed for execution of the project. 
+
+1. Create a new local copy of a remote assignment 1 repository with below command.
+    git clone git@github.com:MonaliPatil19/adv_mla_assignment1.git
+
+2. Change the working directory as adv_mla_assignment1.
+    cd adv_mla_assignment1
+
+3. Set up a virtual environment, install the required packages using requirement.txt
+    pip install -r requirement.txt
+
+3. Install the custom package my-krml-package
+   pip install -i https://test.pypi.org/simple/ my-krml-package==0.1.9
+
+4. Execute the EDA notebook for week 2 and week 3. EDA and modeling is in same neetbook for week 1. 
+   python Patil_Monali-14370946-week2_EDA.ipynb
+   or 
+   Patil_Monali-14370946-week3_EDA.ipynb
+
+5. Once EDA for the respective week is completed, execute the modeliing notebook. 
+   python Patil_Monali-14370946-week1_LR.ipynb
+   or 
+   Patil_Monali-14370946-week2_RF.ipynb
+   Patil_Monali-14370946-week2_RF_Tuned.ipynb 
+   or 
+   Patil_Monali-14370946-week3_AdaBoost.ipynb
+   Patil_Monali-14370946-week3_AdaBoost_Tuned.ipynb
+
+   Note: The notebooks Patil_Monali-14370946-week*_Tuned.ipynb includes a confusion matrix and the utilization of predict_proba() to estimate the probabilities of target classes on the test dataset, to submitted for the Kaggle competition. 
