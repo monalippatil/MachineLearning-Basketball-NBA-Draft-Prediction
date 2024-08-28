@@ -1,4 +1,4 @@
-## ** Machine Learning for NBA Draft Predictions: Analyzing College Basketball Players Performance and Developing a predictive model capable of accurately determining the likelihood of a college basketball player being drafted into the NBA Team**
+## **Machine Learning for NBA Draft Predictions: Analyzing College Basketball Players Performance and Developing a predictive model capable of accurately determining the likelihood of a college basketball player being drafted into the NBA Team.**
 
 ### **<u>Project Overview</u>**
 
